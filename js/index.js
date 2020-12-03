@@ -64,3 +64,9 @@ document.querySelectorAll("nav a")[2].innerHTML =
 
 document.querySelectorAll("nav a")[3].innerHTML =
   siteContent["nav"]["nav-item-4"];
+
+document.querySelectorAll("nav a")[4].innerHTML =
+  siteContent["nav"]["nav-item-5"];
+
+document.querySelectorAll("nav a")[5].innerHTML =
+  siteContent["nav"]["nav-item-6"];
