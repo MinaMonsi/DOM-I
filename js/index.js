@@ -75,7 +75,7 @@ const button = document.querySelector("button");
 //console.log(button);
 button.textContent = "Get Started";
 
-//TOP CONTENT
+//MAIN TEXT CONTENT
 const textContent = document.querySelectorAll(".text-content");
 console.log(textContent);
 
@@ -88,3 +88,21 @@ textContent[1].getElementsByTagName("h4")[0].innerHTML =
   siteContent["main-content"]["about-h4"];
 textContent[1].getElementsByTagName("p")[0].innerHTML =
   siteContent["main-content"]["about-content"];
+
+textContent[2].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["main-content"]["services-h4"];
+textContent[2].getElementsByTagName("p")[0].innerHTML =
+  siteContent["main-content"]["services-content"];
+
+textContent[3].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["main-content"]["product-h4"];
+textContent[3].getElementsByTagName("p")[0].innerHTML =
+  siteContent["main-content"]["product-content"];
+
+//MIDDLE-IMG
+const midImg = document.querySelector(".middle-img");
+console.log(midImg);
+midImg.setAttribute(
+  "src",
+  "https://github.com/MinaMonsi/DOM-I/blob/marina-monsivais/img/mid-page-accent.jpg?raw=true"
+);
