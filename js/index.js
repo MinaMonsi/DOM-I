@@ -64,7 +64,7 @@ ctaText.innerHTML = siteContent["cta"]["h1"];
 
 //MAIN IMG
 const ctaImg = document.querySelector("#cta-img");
-console.log(ctaImg);
+//console.log(ctaImg);
 ctaImg.setAttribute(
   "src",
   "https://github.com/MinaMonsi/DOM-I/blob/main/img/header-img.png?raw=true"
@@ -77,7 +77,7 @@ button.textContent = "Get Started";
 
 //MAIN TEXT CONTENT
 const textContent = document.querySelectorAll(".text-content");
-console.log(textContent);
+//console.log(textContent);
 
 textContent[0].getElementsByTagName("h4")[0].innerHTML =
   siteContent["main-content"]["features-h4"];
@@ -106,8 +106,28 @@ textContent[4].getElementsByTagName("p")[0].innerHTML =
 
 //MIDDLE-IMG
 const midImg = document.querySelector(".middle-img");
-console.log(midImg);
+//console.log(midImg);
 midImg.setAttribute(
   "src",
   "https://github.com/MinaMonsi/DOM-I/blob/marina-monsivais/img/mid-page-accent.jpg?raw=true"
 );
+
+//CONTACT INFO
+const contactInfo = document.querySelectorAll(".contact");
+//console.log(contact);
+contactInfo[0].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["contact"]["contact-h4"];
+
+contactInfo[0].getElementsByTagName("p")[0].innerHTML =
+  siteContent["contact"]["address"];
+
+contactInfo[0].getElementsByTagName("p")[1].innerHTML =
+  siteContent["contact"]["phone"];
+
+contactInfo[0].getElementsByTagName("p")[2].innerHTML =
+  siteContent["contact"]["email"];
+
+//FOOTER
+const footer = document.querySelector("footer p");
+//console.log(footer);
+footer.innerHTML = siteContent["footer"]["copyright"];
