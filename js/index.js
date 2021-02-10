@@ -99,6 +99,11 @@ textContent[3].getElementsByTagName("h4")[0].innerHTML =
 textContent[3].getElementsByTagName("p")[0].innerHTML =
   siteContent["main-content"]["product-content"];
 
+textContent[4].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["main-content"]["vision-h4"];
+textContent[4].getElementsByTagName("p")[0].innerHTML =
+  siteContent["main-content"]["vision-content"];
+
 //MIDDLE-IMG
 const midImg = document.querySelector(".middle-img");
 console.log(midImg);
