@@ -49,12 +49,42 @@ logo.setAttribute(
   "https://github.com/LambdaSchool/DOM-I/blob/main/img/logo.png?raw=true"
 );
 
+//NAV
 const links = document.querySelectorAll("nav a");
-console.log(links);
-
+//console.log(links);
 links[0].innerHTML = siteContent["nav"]["nav-item-1"];
 links[1].innerHTML = siteContent["nav"]["nav-item-2"];
 links[2].innerHTML = siteContent["nav"]["nav-item-3"];
 links[3].innerHTML = siteContent["nav"]["nav-item-4"];
 links[4].innerHTML = siteContent["nav"]["nav-item-5"];
 links[5].innerHTML = siteContent["nav"]["nav-item-6"];
+
+const ctaText = document.querySelector(".cta-text h1");
+ctaText.innerHTML = siteContent["cta"]["h1"];
+
+//MAIN IMG
+const ctaImg = document.querySelector("#cta-img");
+console.log(ctaImg);
+ctaImg.setAttribute(
+  "src",
+  "https://github.com/MinaMonsi/DOM-I/blob/main/img/header-img.png?raw=true"
+);
+
+//BUTTON
+const button = document.querySelector("button");
+//console.log(button);
+button.textContent = "Get Started";
+
+//TOP CONTENT
+const textContent = document.querySelectorAll(".text-content");
+console.log(textContent);
+
+textContent[0].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["main-content"]["features-h4"];
+textContent[0].getElementsByTagName("p")[0].innerHTML =
+  siteContent["main-content"]["features-content"];
+
+textContent[1].getElementsByTagName("h4")[0].innerHTML =
+  siteContent["main-content"]["about-h4"];
+textContent[1].getElementsByTagName("p")[0].innerHTML =
+  siteContent["main-content"]["about-content"];
