@@ -44,29 +44,17 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute("src", siteContent["nav"]["img-src"]);
+logo.setAttribute(
+  "src",
+  "https://github.com/LambdaSchool/DOM-I/blob/main/img/logo.png?raw=true"
+);
 
-const navItem1 = document.querySelector("nav a");
-// console.log("navItem1", navItem1);
+const links = document.querySelectorAll("nav a");
+console.log(links);
 
-navItem1.innerHTML = siteContent["nav"]["nav-item-1"];
-
-document.querySelector("nav a").innerHTML = siteContent["nav"]["nav-item-1"];
-
-document.querySelectorAll("nav a");
-console.log(document.querySelectorAll("nav a")[1]);
-
-document.querySelectorAll("nav a")[1].innerHTML =
-  siteContent["nav"]["nav-item-2"];
-
-document.querySelectorAll("nav a")[2].innerHTML =
-  siteContent["nav"]["nav-item-3"];
-
-document.querySelectorAll("nav a")[3].innerHTML =
-  siteContent["nav"]["nav-item-4"];
-
-document.querySelectorAll("nav a")[4].innerHTML =
-  siteContent["nav"]["nav-item-5"];
-
-document.querySelectorAll("nav a")[5].innerHTML =
-  siteContent["nav"]["nav-item-6"];
+links[0].innerHTML = siteContent["nav"]["nav-item-1"];
+links[1].innerHTML = siteContent["nav"]["nav-item-2"];
+links[2].innerHTML = siteContent["nav"]["nav-item-3"];
+links[3].innerHTML = siteContent["nav"]["nav-item-4"];
+links[4].innerHTML = siteContent["nav"]["nav-item-5"];
+links[5].innerHTML = siteContent["nav"]["nav-item-6"];
