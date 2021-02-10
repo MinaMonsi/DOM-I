@@ -63,7 +63,7 @@ const ctaText = document.querySelector(".cta-text h1");
 ctaText.innerHTML = siteContent["cta"]["h1"];
 
 //MAIN IMG
-const ctaImg = document.querySelector("#cta-img");
+const ctaImg = document.getElementById("cta-img");
 //console.log(ctaImg);
 ctaImg.setAttribute(
   "src",
@@ -105,7 +105,7 @@ textContent[4].getElementsByTagName("p")[0].innerHTML =
   siteContent["main-content"]["vision-content"];
 
 //MIDDLE-IMG
-const midImg = document.querySelector(".middle-img");
+const midImg = document.getElementById("middle-img");
 //console.log(midImg);
 midImg.setAttribute(
   "src",
