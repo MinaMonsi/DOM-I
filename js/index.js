@@ -60,15 +60,19 @@ links[4].innerHTML = siteContent["nav"]["nav-item-5"];
 links[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
 //NEW LINKS
+const newNav = document.querySelector("nav");
+console.log(newNav);
 const aTag1 = document.createElement("a");
 console.log(aTag1);
 aTag1.textContent = "Blog";
 aTag1.style.color = "green";
+newNav.appendChild(aTag1);
 
 const aTag2 = document.createElement("a");
 console.log(aTag2);
 aTag2.textContent = "Resources";
 aTag2.style.color = "green";
+newNav.prepend(aTag2);
 
 //GREEN NAV TEXT
 links[0].style.color = "green";
