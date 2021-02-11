@@ -59,6 +59,15 @@ links[3].innerHTML = siteContent["nav"]["nav-item-4"];
 links[4].innerHTML = siteContent["nav"]["nav-item-5"];
 links[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
+//GREEN NAV TEXT
+links[0].style.color = "green";
+links[1].style.color = "green";
+links[2].style.color = "green";
+links[3].style.color = "green";
+links[4].style.color = "green";
+links[5].style.color = "green";
+
+//H1 CTA-TEXT
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.innerHTML = siteContent["cta"]["h1"];
 
