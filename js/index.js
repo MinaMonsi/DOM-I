@@ -59,6 +59,17 @@ links[3].innerHTML = siteContent["nav"]["nav-item-4"];
 links[4].innerHTML = siteContent["nav"]["nav-item-5"];
 links[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
+//NEW LINKS
+const aTag1 = document.createElement("a");
+console.log(aTag1);
+aTag1.textContent = "Blog";
+aTag1.style.color = "green";
+
+const aTag2 = document.createElement("a");
+console.log(aTag2);
+aTag2.textContent = "Resources";
+aTag2.style.color = "green";
+
 //GREEN NAV TEXT
 links[0].style.color = "green";
 links[1].style.color = "green";
